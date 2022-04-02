@@ -24,9 +24,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import io.quarkus.jackson.ObjectMapperCustomizer;
 import org.homa.demomodule.StringNormalizerModule;
-import org.homa.demotypes.types.CleanFileNameConverter;
-import org.homa.demotypes.types.DurationConverter;
-import org.homa.demotypes.types.EmailAddressConverter;
 
 /**
  * See <a href="https://quarkus.io/guides/rest-json#jackson">Quarkus Jackson Customization</a>
