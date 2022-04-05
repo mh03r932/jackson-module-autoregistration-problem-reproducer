@@ -36,7 +36,7 @@ public class StringNormalizerModule extends SimpleModule {
 	private static final long serialVersionUID = 2854608270842290484L;
 
 	public StringNormalizerModule() {
-		super(PackageVersion.VERSION);
+		super();
 		addDeserializer(String.class, new Deserializer());
 		addSerializer(String.class, new Serializer());
 	}

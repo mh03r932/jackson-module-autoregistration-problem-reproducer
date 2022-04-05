@@ -32,6 +32,6 @@ public class TimeTestResource {
     @Produces(MediaType.APPLICATION_JSON)
     @Path("time")
     public Timecontainer echoDate(Timecontainer tc) {
-        return new Timecontainer(tc.localDateTime, tc.localDate, "   this is a teststring  ");
+        return new Timecontainer(tc.localDateTime, tc.localDate, "   this is a teststring  with whitespaces at the beginning and at the end ");
     }
 }
