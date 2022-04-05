@@ -34,19 +34,8 @@ public class JacksonCustomizer implements ObjectMapperCustomizer {
 
 	@Override
 	public void customize(ObjectMapper mapper) {
-		// Default is: write timestamps as array... which sucks
-		mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-//
-		SimpleModule module = new SimpleModule("ABC"); // TODO wozu brauchen wir das?
 
-
-//		EmailAddressConverter.registerJackson(module);
-//		CleanFileNameConverter.registerJackson(module);
-//		DurationConverter.registerJackson(module);
-
-		mapper.registerModule(module);
 		mapper.registerModule(new StringNormalizerModule());
-
 
 	}
 

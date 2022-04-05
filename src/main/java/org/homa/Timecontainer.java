@@ -16,4 +16,6 @@ public class Timecontainer {
 
 	LocalDateTime localDateTime;
 	LocalDate localDate;
+
+	String teststring = "    this is a teststring that has some whitespace at the beginning and the end    ";
 }
